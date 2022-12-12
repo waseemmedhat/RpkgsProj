@@ -1,4 +1,4 @@
-#' Display Fatal Injries for a Given Year on a Geographical Map
+#' Display Fatal Injuries for a Given Year on a Geographical Map
 #'
 #' @param state.num character or numeric, state number
 #' @param year character or numeric, year
