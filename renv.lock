@@ -11,10 +11,10 @@
   "Packages": {
     "renv": {
       "Package": "renv",
-      "Version": "0.15.2",
+      "Version": "0.16.0",
       "Source": "Repository",
       "Repository": "CRAN",
-      "Hash": "206c4ef8b7ad6fb1060d69aa7b9dfe69",
+      "Hash": "c9e8442ab69bc21c9697ecf856c1e6c7",
       "Requirements": []
     }
   }
