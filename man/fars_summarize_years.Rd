@@ -19,6 +19,3 @@ Count Fatal Injuries per Month/Year for Specified Year(s)
 The function reads the data file(s) for the input years (using
   \code{\link{fars_read_years}}) and counts the injuries within each month.
 }
-\examples{
-fars_summarize_years(2013:2015)
-}

@@ -20,9 +20,6 @@ Get Month/Year of Fatal Injuries for Specified Year(s)
 The function reads the data file(s) for the input years and returns
   the months of fatal injuries. Warnings will be produced for invalid years.
 }
-\examples{
-fars_read_years(2013:2015)
-}
 \seealso{
 \code{\link{fars_summarize_years}}
 }

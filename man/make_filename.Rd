@@ -20,9 +20,6 @@ To facilitate reading data from FARS files, this function takes
 The function uses \code{\link{sprintf}} to generate the file name,
   after coercing the `year` argument to an integer.
 }
-\examples{
-make_filename(2013)
-}
 \seealso{
 \code{\link{fars_read}}
 }

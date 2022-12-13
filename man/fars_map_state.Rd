@@ -22,6 +22,3 @@ The function reads the data file for the input year (using
   \code{\link{fars_read}}) and displays the fatal injuries using dots on a
   geographical map.
 }
-\examples{
-fars_map_state(1, 2013)
-}

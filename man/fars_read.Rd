@@ -21,9 +21,6 @@ The function relies on the `readr` function \code{\link{read_csv}}
   instead of the base R function. If the file does not exist, the function
   throws an error.
 }
-\examples{
-fars_read("accident_2013.csv.bz2")
-}
 \seealso{
 \code{\link{make_filename}} to generate filenames that can be used
   by the function.
