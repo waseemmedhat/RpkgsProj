@@ -12,7 +12,9 @@
 #' @importFrom tidyr spread
 #'
 #' @examples
-#' fars_summarize_years(2013:2015)
+#' \dontrun{
+#'   fars_summarize_years(2013:2015)
+#' }
 fars_summarize_years <- function(years) {
         dat_list <- fars_read_years(years)
         dplyr::bind_rows(dat_list) |>

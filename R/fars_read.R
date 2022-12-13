@@ -19,7 +19,9 @@
 #' @importFrom dplyr tbl_df
 #'
 #' @examples
-#' fars_read("accident_2013.csv.bz2")
+#' \dontrun{
+#'   fars_read("accident_2013.csv.bz2")
+#' }
 fars_read <- function(filename) {
         if(!file.exists(filename))
                 stop("file '", filename, "' does not exist")
