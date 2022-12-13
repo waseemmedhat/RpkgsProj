@@ -2,6 +2,7 @@
 # RpkgsProj
 
 <!-- badges: start -->
+[![AppVeyor build status](https://ci.appveyor.com/api/projects/status/github/waseemmedhat/RpkgsProj?branch=master&svg=true)](https://ci.appveyor.com/project/waseemmedhat/RpkgsProj)
 <!-- badges: end -->
 
 The goal of RpkgsProj is to analyze and visualize data from the US National
