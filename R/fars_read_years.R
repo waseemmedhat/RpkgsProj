@@ -13,10 +13,6 @@
 #'
 #' @importFrom dplyr mutate select
 #'
-#' @examples
-#' \dontrun{
-#'   fars_read_years(2013:2015)
-#' }
 fars_read_years <- function(years) {
         lapply(years, function(year) {
                 file <- make_filename(year)

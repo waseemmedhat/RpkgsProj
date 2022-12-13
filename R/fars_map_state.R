@@ -14,10 +14,6 @@
 #' @importFrom maps map
 #' @importFrom graphics points
 #'
-#' @examples
-#' \dontrun{
-#'   fars_map_state(1, 2013)
-#' }
 fars_map_state <- function(state.num, year) {
         filename <- make_filename(year)
         data <- fars_read(filename)
