@@ -8,15 +8,15 @@
 #' @return A tibble with fatal injury count per month/year
 #' @export
 #'
-#' @importFrom dplyr bind_rows group_by summarize
+#' @importFrom dplyr bind_rows group_by summarize n
 #' @importFrom tidyr spread
 #'
 #' @examples
 #' fars_summarize_years(2013:2015)
 fars_summarize_years <- function(years) {
         dat_list <- fars_read_years(years)
-        dplyr::bind_rows(dat_list) %>%
-                dplyr::group_by(year, MONTH) %>%
-                dplyr::summarize(n = n()) %>%
+        dplyr::bind_rows(dat_list) |>
+                dplyr::group_by(year, MONTH) |>
+                dplyr::summarize(n = dplyr::n()) |>
                 tidyr::spread(year, n)
 }

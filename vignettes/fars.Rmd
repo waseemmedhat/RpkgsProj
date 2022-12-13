@@ -1,0 +1,72 @@
+---
+title: "FARS Data Analysis with RpkgsProj"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{fars}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  eval = FALSE,
+  comment = "#>"
+)
+```
+
+This vignette walks you through using the functions provided by `RpkgsProj` to
+analyze and visualize FARS data.
+
+```{r setup}
+library(RpkgsProj)
+```
+
+# Introduction and Context
+
+The US National Highway Traffic Safety Administration's Fatality Analysis
+Reporting System (FARS), is a nationwide census providing the American public
+yearly data regarding fatal injuries suffered in motor vehicle traffic crashes.
+
+Example data can be found 
+[here](https://d3c33hcgiwev3.cloudfront.net/_e1adac2a5f05192dc8780f3944feec13_fars_data.zip?Expires=1670976000&Signature=kiMQNN4tlDNQe-pJID3Epe2bMKSvc2bskmq~Poe2jUuBZ8HaexU4rIGVUmFNHOJm45Xwcs6sJIW0Oe2SCvnTh33gP1GbXz4FPJkpoSmTvurr3eMDfbtb0c9caCeeSGj7P4GCDooqaa9eKJALHVtCVMiXpAZ-MMDCvv9F9QP4wko_&Key-Pair-Id=APKAJLTNE6QMUY6HBC5A).
+
+> **Important note**: To avoid the inclusion of large datasets into the package,
+the examples displayed below were not evaluated during the building of the
+vignette.
+
+# Reading Data
+
+FARS data files can be imported into your R session with the function
+`fars_read()`
+
+```{r}
+fars_read("accident_2013.csv.bz2")
+```
+
+Alternatively, you could use `fars_read_years()` to provide only the year (or
+vector of years) as an argument, and the function will look for the
+corresponding file.
+
+```{r}
+fars_read_years(2013)
+```
+
+# Summarizing Data
+
+You can use the function `fars_summarize_years()`, giving it the year(s) as an
+argument to summarize the accidents within each month as counts.
+
+```{r}
+fars_summarize_years(2013)
+```
+
+# Visualizing Data
+
+The package provides the function `fars_map_state()` in which you could provide
+a state number and a year to visualize the accidents within that state.
+
+```{r}
+fars_map_state(1, 2013)
+```
+
